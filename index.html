@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<title>index</title>
+<title>BSF Hostile Home</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
 		--web-view-name: index;
@@ -374,6 +374,66 @@
 	}
 </style>
 </head>
+<!---NAVIGATIONOVERLAY***/-->
+<style>
+	.sidenav{
+		height:100%;
+		width:0;
+		position:fixed;
+		z-index:1;
+		top:0;
+		left:0;
+		background-color:#111;
+		overflow-x:hidden;
+		transition:0.5s;
+		paddingtop:60px;	
+	}
+	.sidenav a {
+		padding:8px 8px 8px 8px;
+		text-decoration:none;
+		font-size:25px;
+		color:#818181;
+		display:block;
+		transition:0.3s
+	}
+	.sidenav a:hover{color:#f1f1f1;
+	}
+	.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<div id:"mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="New_TG_Home.html">Traitor Guardsmen</a>
+	<a href="New_NC_Home.html">Negavolt Cultist</a>
+	<a href="New_UG_Home.html">Ur-Ghul</a>
+	<a href="New_SD_Home.html">Spindle Drone</a>
+	<a href="New_RP_Home.html">Rogue Psyker</a>
+	<a href="New_CSM_Home.html">Chaos Space Marine</a>
+	<a href="New_CB_Home.html">Chaos Beastman</a>
+	<a href="New_OM_Home.html">Obsidius Mallex</a>
+	<a href="Other_Reference.html">Other Reference</a>
+	<a href="index.html">Home</a>
+	</div>
+
+<script>
+	function openNav() {
+		document.getElementbyID("mySidenav").style.width = "250px";
+	}
+	function closeNav() {
+		document.getElementbyID("mySidenav").style.width = "0";
+	}
+	</script>
+	
 <body>
 <div id="index">
 	<svg class="Rectangle_11">
@@ -506,8 +566,7 @@
 		</div>
 	</div>
 	</a>
-	<a href="Main_Menu___Overlay.html" target="_self">
-	<div id="Group_797">
+		<div id="Group_797" onclick="OpenNav()">
 		<div id="Group_676">
 			<svg class="Rectangle_4">
 				<rect fill="rgba(255,255,255,1)" id="Rectangle_4" rx="0" ry="0" x="0" y="0" width="25" height="2.5">
@@ -527,7 +586,7 @@
 			</rect>
 		</svg>
 	</div>
-	</a>
+
 </div>
 </body>
 </html>
