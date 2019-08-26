@@ -6,7 +6,6 @@
 body {
   font-family: "Lato", sans-serif;
 }
-
 	.sidenav{
 		height:100%;
 		width:0;
@@ -71,7 +70,6 @@ body {
   		font-size: 36px;
   		margin-left: 20px;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -100,12 +98,15 @@ body {
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
-
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-
-
+window.addEventListener('mouseup', function(event){
+	var div = document.getElementById('mySidenav');
+	if (event.target != div && event.target.parentNode != div){
+        document.getElementById("mySidenav").style.width = "0";
+    }
+});
 </script>
 </body>
 </html>
