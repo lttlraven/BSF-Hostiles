@@ -1,5 +1,13 @@
 <?php
 echo '}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
 	.sidenav{
 		height:100%;
 		width:0;
@@ -102,5 +110,7 @@ window.addEventListener('mouseup', function(event){
         document.getElementById("mySidenav").style.width = "0";
     }
 });
-</script>;
+</script>
+</body>
+</html>
 ?>
