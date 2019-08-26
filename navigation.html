@@ -7,7 +7,7 @@
 <style>
 	.sidenav{
 		height:100%;
-		width:15%;
+		width:0;
 		position:fixed;
 		z-index:1;
 		top:0;
@@ -28,7 +28,7 @@
 		border-radius:0 5px 5px 0;
 	}
 	.sidenav a:hover{
-		color:#f1f1f1;
+		color:#2A2222;
 	}
 	.TGNav{
 		background-color: rgba(255,255,255,1);
@@ -61,7 +61,7 @@
 		background-color: rgba(244,239,214,1);
 	}
 	.sidenav .closebtn {
-  		position: relative;
+  		position: absolute;
   		top: 0;
   		right: 15px;
   		font-size: 36px;
@@ -86,25 +86,25 @@
 		<a href="Other_Reference.html" class="ORNav">Other Reference</a>
 		<a href="index.html" class="HomeNav">Home</a>
 	</div>
-	
-	<a href="javascript:void(0)" alt="" class="openbtn" onclick="openNav()">
+	<span style-"font-size:30px;cursor:pointer" onclick="openNav()">Open</span>
+	<a href="javascript:void(0)" alt="" onclick="openNav()">
 		<img id="Group_797" src="Group_797.png" alt="">
 	</a>
 	
 	<script>
 		function openNav() {
-			document.getElementbyID("mySidenav").style.width = "15%";
+			document.getElementbyID("mySidenav").style.width = "30%";
 		}
 		function closeNav() {
 			document.getElementbyID("mySidenav").style.width = "0";
 		}
 		document.addEventListener('mousedown',function(event){
         	var side_dom    = document.getElementById("mySidenav")
-        	if(side_dom.style.width == '15%'){
+        	if(side_dom.style.width == '30%'){
                 if(!side_dom.contains(event.target)){
                         document.getElementById("mySidenav").style.width = "0";
                 }
-        }       
+        	}       
 		})
 	</script>
 <body>
