@@ -21,8 +21,8 @@
 		position: absolute;
 		box-sizing: border-box;
 		background: #E5E5E5;
-		width: 375;
-		height: 812;
+		width: 375px;
+		height: 812px;
 		background-color: rgba(244,239,214,1);
 		overflow: visible;
 		margin: 0;
@@ -332,46 +332,6 @@
 		top: 25px;
 		overflow: visible;
 	}
-	#Group_676 {
-		position: absolute;
-		width: 25px;
-		height: 20px;
-		left: 16px;
-		top: 31px;
-		overflow: visible;
-	}
-	.Rectangle_4 {
-		position: absolute;
-		overflow: visible;
-		width: 25px;
-		height: 2.5px;
-		left: 0px;
-		top: 0px;
-	}
-	.Rectangle_5 {
-		position: absolute;
-		overflow: visible;
-		width: 25px;
-		height: 2.5px;
-		left: 0px;
-		top: 8.75px;
-	}
-	.Rectangle_6 {
-		position: absolute;
-		overflow: visible;
-		width: 25px;
-		height: 2.5px;
-		left: 0px;
-		top: 17.5px;
-	}
-	.Rectangle_669 {
-		position: absolute;
-		overflow: visible;
-		width: 48px;
-		height: 63px;
-		left: 0px;
-		top: 0px;
-	}
 </style>
 </head>
 <body>
@@ -506,28 +466,19 @@
 		</div>
 	</div>
 	</a>
-	<a href="javscript:void(0)">
-	<div id="Group_797" onclick="openNav()">
-		<div id="Group_676">
-			<svg class="Rectangle_4">
-				<rect fill="rgba(255,255,255,1)" id="Rectangle_4" rx="0" ry="0" x="0" y="0" width="25" height="2.5">
-				</rect>
-			</svg>
-			<svg class="Rectangle_5">
-				<rect fill="rgba(255,255,255,1)" id="Rectangle_5" rx="0" ry="0" x="0" y="0" width="25" height="2.5">
-				</rect>
-			</svg>
-			<svg class="Rectangle_6">
-				<rect fill="rgba(255,255,255,1)" id="Rectangle_6" rx="0" ry="0" x="0" y="0" width="25" height="2.5">
-				</rect>
-			</svg>
-		</div>
-		<svg class="Rectangle_669">
-			<rect fill="transparent" id="Rectangle_669" rx="0" ry="0" x="0" y="0" width="48" height="63">
-			</rect>
-		</svg>
-	</div>
+	<a href="javscript:void(0) onclick="openNav()"">
+	<img id="Group_797" src="Group_797.png" srcset="Group_797.png 1x, Group_797@2x.png 2x">
 	</a>
 </div>
+
+<script>
+	function openNav() {
+		document.getElementbyID("mySidenav").style.width = "250px";
+	}
+	function closeNav() {
+		document.getElementbyID("mySidenav").style.width = "0";
+	}
+	</script>
+
 </body>
 </html>
