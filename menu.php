@@ -1,9 +1,3 @@
-<?php
-echo '}
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
   font-family: "Lato", sans-serif;
@@ -111,6 +105,3 @@ window.addEventListener('mouseup', function(event){
     }
 });
 </script>
-</body>
-</html>
-?>
