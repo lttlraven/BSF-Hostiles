@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <title>New TG Roll 1-3</title>
+	<link rel="stylesheet" type="text/css" href="headerstyle.css">
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
 		--web-view-name: New TG Roll 1-3;
@@ -1618,21 +1619,73 @@
 	<div id="ROLL">
 		<span>ROLL</span>
 	</div>
-	<a href="Action___Hold.html">
-	<img id="Group_745" src="Group_745.png" srcset="Group_745.png 1x, Group_745@2x.png 2x">
-	</a>
-	<a href="Action___Fall_Back.html">
-	<img id="Group_744" src="Group_744.png" srcset="Group_744.png 1x, Group_744@2x.png 2x">
-	</a>
-	<a href="Action___Advance.html">
-	<img id="Group_743" src="Group_743.png" srcset="Group_743.png 1x, Group_743@2x.png 2x">
-	</a>
-	<a href="Action___Aim.html">
-	<img id="Group_742" src="Group_742.png" srcset="Group_742.png 1x, Group_742@2x.png 2x">
-	</a>
-	<a href="Action___Fall_Back.html">
-	<img id="Group_746" src="Group_746.png" srcset="Group_746.png 1x, Group_746@2x.png 2x">
-	</a>
+	
+		<div id="ActionFallBack" class="Action" onClick="MM_callJS('ActionFallBackoff()')">
+		<div id="TextFallBack" class="ActionText"><span style="font-size:16px;">FALL BACK</span><br>
+			<span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Double this hostile’s Move value when they take this action. If this hostile can make a move that ends in a hex that is not visible to any explorers, they do so. If they cannot, they attack the closest explorer that is in range of and visible to this hostile.</span></div>
+	</div>
+	
+	<div id="ActionAdvance" class="Action" onClick="MM_callJS('ActionAdvanceoff()')">
+		<div id="TextAdvance" class="ActionText"><span style="font-size:16px;">ADVANCE</span><br>
+			<span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Move toward the closest explorer. Then attack the closest explorer that is in range of and visible to this hostile</span></div>
+	</div>
+	<div id="ActionAim" class="Action" onClick="MM_callJS('ActionAimoff()')">
+		<div id="TextAim" class="ActionText"><span style="font-size:16px;">AIM</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Attack the furthest explorer that is in range of and visible to this hostile.</span></div>
+	</div>
+	<div id="ActionAlert" class="Action" onClick="MM_callJS('ActionAlertoff()')">
+		<div id="TextAlert" class="ActionText"><span style="font-size:16px;">UNIQUE: ALERT</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Increase the threat level by 1 (see Special Rules) and then take an Onslaught action. If the threat level is 3, take an Onslaught action and re-roll attack rolls for that action instead.<br/></span><br><span style="font-size:14px;">Onslaught</span><span style="font-style:normal;font-weight:normal;font-size:14px;">: Attack the closest explorer that is in range of and visible to this hostile. Then attack the closest explorer that is in range of and visible to this hostile (this may be a different target if the first explorer is taken out of action or another explorer is equally close).</span></div>
+	</div>
+	<div id="ActionCharge" class="Action" onClick="MM_callJS('ActionChargeoff()')">
+		<div id="TextCharge" class="ActionText"><span style="font-size:16px;">CHARGE</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Move towards the closest explorer. Then attack an explorer that is adjacent and visible to this hostile. If there are no explorers adjacent and visible to this hostile, move towards the closest explorer a second time.</span></div>
+	</div>
+	<div id="ActionFury" class="Action" onClick="MM_callJS('ActionFuryoff()')">
+		<div id="TextFury" class="ActionText"><span style="font-size:16px;">UNIQUE: FURY</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Take an Onslaught action. Re-roll failed attack rolls for that action.<br/><br/>Onslaught: Attack the closest explorer that is in range of and visible to this hostile. Then attack the closest explorer that is in range of and visible to this hostile (this may be a different target if the first explorer is taken out of action or another explorer is equally close).</span></div>
+	</div>
+	<div id="ActionHold" class="Action" onClick="MM_callJS('ActionHoldoff()')">
+		<div id="TextHold" class="ActionText"><span style="font-size:16px;">HOLD</span><br><span style="font-style:normal;font-weight:normal;font-size:12px;"></span><br><span style="font-style:normal;font-weight:normal;font-size:14px;">Do nothing.</span></div>
+	</div>
+	<div id="ActionOnslaught" class="Action" onClick="MM_callJS('ActionOnslaughtoff()')">
+		<div id="TextOnslaught" class="ActionText"><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Attack the closest explorer that is in range of and visible to this hostile. Then attack the closest explorer that is in range of and visible to this hostile (this may be a different target if the first explorer is taken out of action or another explorer is equally close).</span></div>
+	</div>
+	<div id="ActionOvercharge" class="Action" onClick="MM_callJS('ActionOverchargeoff()')">
+		<div id="TextOvercharge" clas="ActionText"><span style="font-size:16px;">UNIQUE: OVERCHARGE</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Make an overcharged Plasma Pistol attack against the closest explorer that is in range of and visible to Obsidus Mallex. </span></div>
+	</div>
+	<div id="ActionRapidFire" class="Action" onClick="MM_callJS('ActionRapidFireoff()')">
+		<div id="TextRapidFire" class="ActionText"><span style="font-size:16px;">UNIQUE: RAPID FIRE</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Take an Onslaught action. Re-roll failed attack rolls for that action.<br/></span><br><span style="font-size:14px;">Onslaught</span><span style="font-style:normal;font-weight:normal;font-size:14px;">: Attack the closest explorer that is in range of and visible to this hostile. Then attack the closest explorer that is in range of and visible to this hostile (this may be a different target if the first explorer is taken out of action or another explorer is equally close).</span></div>
+	</div>
+	<div id="ActionRPAnnihilate" class="Action" onClick="MM_callJS('ActionRPAnnihilateoff()')">
+		<div id="TextRPAnnihilate" class="ActionText"><span style="font-size:16px;">UNIQUE: ANNIHILATE</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Place the empowered marker beside the Rogue Psyker. Then attack an explorer that is adjacent and visible to this hostile. Re-roll failed attack rolls for that attack. The Rogue Psyker remains empowered until they suffer a wound or grievous wound.</span></div>
+	</div>
+	<div id="ActionRPDisrupt" class="Action" onClick="MM_callJS('ActionRPDisruptoff()')">
+		<div id="TextRPDisrupt" class="ActionText"><span style="font-size:16px;">UNIQUE: DISRUPT</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>One unspent activation or destiny dice chosen by the hostile player is discarded and cannot be spent this turn. If no unspent activation or destiny dice are available, one explorer chosen by the hostile player suffers a wound.</span></div>
+	</div>
+	<div id="ActionRPEmpower" class="Action" onClick="MM_callJS('ActionRPEmpoweroff()')">
+		<div id="TextRPEmpower" class="ActionText"><span style="font-size:16px;">UNIQUE: EMPOWER</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Place the empowered marker beside the Rogue Psyker. If the Rogue Psyker is already empowered, treat this result as a Disrupt result instead. The Rogue Psyker remains empowered until they suffer a wound or grievous wound.</br></span><br><span style="font-size:14px;">Disrupt</span><span style="font-style:normal;font-weight:normal;font-size:14px;">: One unspent activation or destiny dice chosen by the hostile player is discarded and cannot be spent this turn. If no unspent activation or destiny dice are available, one explorer chosen by the hostile player suffers a wound.</span></div>
+	</div>
+	<div id="ActionRPRegenerate" class="Action" onClick="MM_callJS('ActionRPRegenerateoff()')">
+		<div id="TextRPRegenerate" class="ActionText"><span style="font-size:16px;">UNIQUE: REGENERATE</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Remove a wound counter from the Rogue Psyker. If the Rogue Psyker does not have a wound counter, treat this result as a Disrupt result instead.<br/></span><br><span style="font-size:14px;">Disrupt</span><span style="font-style:normal;font-weight:normal;font-size:14px;">: One unspent activation or destiny dice chosen by the hostile player is discarded and cannot be spent this turn. If no unspent activation or destiny dice are available, one explorer chosen by the hostile player suffers a wound.</span></div>
+	</div>
+	<div id="ActionRush" class="Action" onClick="MM_callJS('ActionRushoff()')">
+		<div id="TextRush" class="ActionText"><span style="font-size:16px;">UNIQUE: RUSH</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Move towards the closest explorer. Then take a Charge action.<br/></span><br><span style="font-size:14px;">Charge</span><span style="font-style:normal;font-weight:normal;font-size:14px;">: Move towards the closest explorer. Then attack an explorer that is adjacent and visible to this hostile. If there are no explorers adjacent and visible to this hostile, move towards the closest explorer a second time.</span></div>
+	</div>
+	<div id="ActionSneak" class="Action" onClick="MM_callJS('ActionSneakoff()')">
+		<div id="TextSneak" class="ActionText"><span style="font-size:16px;">SNEAK</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Make a move that ends as close as possible to an explorer without entering a hex that is visible to any explorers.</span></div>
+	</div>
+	<div id="ActionUGPounce" class="Action" onClick="MM_callJS('ActionUGPounceoff()')">
+		<div id="TextUGPounce" class="ActionText"><span style="font-size:16px;">UNIQUE: POUNCE</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>If there is an explorer adjacent and visible to this Ur-Ghul, take an Onslaught action. Otherwise, take a Charge action. Re-roll failed attack rolls for whichever action is taken.</span><br><span style="font-style:normal;font-weight:normal;font-size:10.5px;"></span><br><span style="font-size:10.5px;">Onslaught</span><span style="font-style:normal;font-weight:normal;font-size:10.5px;">: Attack the closest explorer that is in range of and visible to this hostile. Then attack the closest explorer that is in range of and visible to this hostile (this may be a different target if the first explorer is taken out of action or another explorer is equally close).<br/></span><br><span style="font-size:10.5px;">Charge</span><span style="font-style:normal;font-weight:normal;font-size:10.5px;">: Move towards the closest explorer. Then attack an explorer that is adjacent and visible to this hostile. If there are no explorers adjacent and visible to this hostile, move towards the closest explorer a second time.</span></div>
+	</div>
+	<div id="ActionUGRush" class="Action" onClick="MM_callJS('ActionUGRushoff()')">
+		<div id="TextUGRush" class="ActionText"><span style="font-size:16px;">UNIQUE: RUSH</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Move towards the closest explorer. Then take a Charge action.<br/></span><br><span style="font-size:14px;">Charge</span><span style="font-style:normal;font-weight:normal;font-size:14px;">: Move towards the closest explorer. Then attack an explorer that is adjacent and visible to this hostile. If there are no explorers adjacent and visible to this hostile, move towards the closest explorer a second time.</span></div>
+	</div>
+	<div id="ActionNCRecharge" class="Action" onClick="MM_callJS('ActionNCRechargeoff()')">
+		<div id="TextNCRecharge" class="ActionText"><span style="font-size:16px;">UNIQUE: RECHARGE</span><br><span></span><br><span style="font-style:normal;font-weight:normal;font-size:14px;">Remove a wound counter from the Negavolt Cultist. If the Negavolt Cultist does not have a wound counter, treat this result as an Advance result instead.</span><br><span style="font-size:14px;"><br/>Advance: </span><span style="font-style:normal;font-weight:normal;font-size:14px;">Move towards the closest explorer. Then attack the closest explorer that is in range of and visible to this hostile.</span></div>
+	</div>
+	
+	<img id="Group_745" src="Group_745.png" srcset="Group_745.png 1x, Group_745@2x.png 2x" onclick="ActionHoldon()">
+	<img id="Group_744" src="Group_744.png" srcset="Group_744.png 1x, Group_744@2x.png 2x" onclick="ActionFallBackon()">
+	<img id="Group_743" src="Group_743.png" srcset="Group_743.png 1x, Group_743@2x.png 2x" onclick="ActionAdvanceon()">
+	<img id="Group_742" src="Group_742.png" srcset="Group_742.png 1x, Group_742@2x.png 2x" onclick="ActionAimon()">
+	<img id="Group_746" src="Group_746.png" srcset="Group_746.png 1x, Group_746@2x.png 2x" onclick="ActionFallBackon()">
 	<a href="New_TG_Home.html">
 	<img id="Group_741" src="Group_741.png" srcset="Group_741.png 1x, Group_741@2x.png 2x">
 	</a>
@@ -1723,9 +1776,22 @@
 	<div id="Sergeant_Wounds__3">
 		<span>Sergeant Wounds: </span><span style="font-style:normal;font-weight:bold;">3</span>
 	</div>
-	<a href="Main_Menu___Overlay.html">
-	<img id="Group_831" src="Group_831.png" srcset="Group_831.png 1x, Group_831@2x.png 2x">
+<div id="mySidenav" class="sidenav">
+	  <a href="New_TG_Home.html" class="TGNav">Traitor Guardsmen</a>
+	  <a href="New_NC_Home.html" class="NCNav">Negavolt Cultist</a>
+	  <a href="New_UG_Home.html" class="UGNav">Ur-Ghul</a>
+	  <a href="New_SD_Home.html" class="SDNav">Spindle Drone</a>
+	  <a href="New_RP_Home.html" class="RPNav">Rogue Psyker</a>
+	  <a href="New_CSM_Home.html" class="CSMNav">Chaos Space Marine</a>
+	  <a href="New_CB_Home.html" class="CBNav">Chaos Beastman</a>
+	  <a href="New_OM_Home.html" class="OMNav">Obsidius Mallex</a>
+	  <a href="Other_Reference.html" class="ORNav">Other Reference</a>
+	  <a href="index.html" class="HomeNav">Home</a>
+	</div>
+	
+	<a href="javascript:void(0)" onclick="openNav()">
+	<img id="Group_797" src="Group_797.png" srcset="Group_797.png 1x, Group_797@2x.png 2x">
 	</a>
-</div>
+<script src="headerscript.js"></script></div>
 </body>
 </html>
