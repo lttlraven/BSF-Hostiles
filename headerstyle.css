@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+
+	#Group_797 {
+		position: absolute;
+		width: 48px;
+		height: 63px;
+		left: 0px;
+		top: 25px;
+		overflow: visible;
+	}
+	.sidenav{
+		height:100%;
+		width:0;
+		position:fixed;
+		z-index:1;
+		top:0;
+		left:0;
+		background-color:#111;
+		overflow-x:hidden;
+		transition:0.5s;
+		paddingtop:60px;
+    }
+	.sidenav a {
+		padding:8px 8px 8px 8px;
+		text-decoration:none;
+		font-size:20px;
+		color:#000000;
+		display:block;
+		padding:10px;
+		transition:0.3s;
+		border-radius:0 10px 10px 0;
+        width:85%;
+	}
+	.sidenav a:hover{
+		color:#2A2222;
+        width:90%;
+	}
+	.TGNav{
+		background-color: rgba(255,255,255,1);
+	}
+	.NCNav{
+		background-color: rgba(168,166,172,1);
+	}
+	.UGNav{
+		background-color: rgba(187,186,190,1);
+	}
+	.SDNav{
+		background-color: rgba(229,226,235,1);
+	}
+	.RPNav{
+		background-color: rgba(215,210,230,1);
+	}
+	.CSMNav{
+		background-color: rgba(168,166,172,1);
+	}
+	.CBNav{
+		background-color: rgba(255,255,255,1);
+	}
+	.OMNav{
+		background-color: rgba(229,226,235,1);
+	}
+	.ORNav{
+		background-color: rgba(187,186,190,1);
+	}
+	.HomeNav{
+		background-color: rgba(244,239,214,1);
+	}
+	.sidenav .closebtn {
+  		position: absolute;
+  		top: 0;
+  		right: -170px;
+  		font-size: 36px;
+  		margin-left: 20px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
