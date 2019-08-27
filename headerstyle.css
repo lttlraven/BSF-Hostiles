@@ -73,7 +73,7 @@
   		font-size: 36px;
   		margin-left: 20px;
 	}
-	#fallback {
+	.Action {
 		position: fixed;
   		display: none;
   		width: 100%;
@@ -86,7 +86,7 @@
   		z-index: 2;
   		cursor: pointer;
 	}
-	#text{
+	.ActionText{
   		position: absolute;
   		top: 50%;
   		left: 50%;
