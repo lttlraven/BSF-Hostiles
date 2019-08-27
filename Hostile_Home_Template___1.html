@@ -1216,6 +1216,11 @@
 		color: rgba(0,0,0,1);
 	}
 </style>
+<script type="text/javascript">
+function MM_callJS(jsStr) { //v2.0
+  return eval(jsStr)
+}
+</script>
 </head>
 <body>
 <div id="Hostile_Home_Template___1">
@@ -1622,8 +1627,9 @@
 	<div id="ROLL">
 		<span>ROLL</span>
 	</div>
-	<div id="fallback" onclick:"off()">
-		<div id="text"><span></span><br><span style="font-size:16px;">FALL BACK</span><br><span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Double this hostile’s Move value when they take this action. If this hostile can make a move that ends in a hex that is not visible to any explorers, they do so. If they cannot, they attack the closest explorer that is in range of and visible to this hostile.</span></div>
+	<div id="fallback" onClick="MM_callJS('off()')">
+		<div id="text"><span style="font-size:16px;">FALL BACK</span><br>
+			<span style="font-style:normal;font-weight:normal;font-size:14px;"><br/>Double this hostile’s Move value when they take this action. If this hostile can make a move that ends in a hex that is not visible to any explorers, they do so. If they cannot, they attack the closest explorer that is in range of and visible to this hostile.</span></div>
 	</div>
 	
 	<img id="Group_882" src="Group_882.png" srcset="Group_882.png 1x, Group_882@2x.png 2x" onclick="on()">
@@ -1647,7 +1653,7 @@
 	  <a href="New_OM_Home.html" class="OMNav">Obsidius Mallex</a>
 	  <a href="Other_Reference.html" class="ORNav">Other Reference</a>
 	  <a href="index.html" class="HomeNav">Home</a>
-	</div>
+  </div>
 	
 	<a href="javascript:void(0)" onclick="openNav()">
 	<img id="Group_797" src="Group_797.png" srcset="Group_797.png 1x, Group_797@2x.png 2x">
