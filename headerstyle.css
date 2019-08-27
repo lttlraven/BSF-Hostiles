@@ -97,6 +97,462 @@
   		transform: translate(-50%,-50%);
   		-ms-transform: translate(-50%,-50%);
 	}
+	#ActionFallBack {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextFallBack{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionAdvance {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextAdvance{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionAim {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextAim{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionAlert {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextAlert{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionCharge {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextCharge{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionFury {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextFury{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionHold {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextHold{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionOnslaught {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextOnslaught{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionOvercharge {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextOvercharge{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionRapidFire {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextRapidFire{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionRPAnnihilate {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextRPAnnihilate{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionRPDisrupt {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextRPDisrupt{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionRPEmpower {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextRPEmpower{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionRPRegenerate {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextRPRegenerate{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionRush {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextRush{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionSneak {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextSneak{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionUGPounce {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextUGPounce{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionUGRush {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextUGRush{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
+	#ActionNCRecharge {
+		position: fixed;
+  		display: none;
+  		width: 100%;
+  		height: 100%;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+ 		background-color: rgba(255,254,254,0.90);
+  		z-index: 2;
+  		cursor: pointer;
+	}
+	#TextNCRecharge{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		font-family: Helvetica Neue;
+  		font-style: normal;
+		font-weight: bold;
+  		color: rgba(0,0,0,1);
+  		transform: translate(-50%,-50%);
+  		-ms-transform: translate(-50%,-50%);
+	}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
