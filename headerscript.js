@@ -11,3 +11,10 @@ window.addEventListener('mouseup', function(event){
         document.getElementById("mySidenav").style.width = "0";
     }
 });
+function on() {
+  document.getElementById("fallback").style.display = "block";
+}
+
+function off() {
+  document.getElementById("fallback").style.display = "none";
+}
